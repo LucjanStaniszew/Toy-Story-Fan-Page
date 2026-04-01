@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Story Fan Page - Peliculas</title>
+
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo.png" alt="Hola soy el texto alternativo de el Logo" class="logo">
+                </a>
+                <h1 class="fw-bold">Toy Story Fan Page</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-4 fw-semibold" aria-current="page" href="./peliculas.html">Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 fw-semibold" href="./personajes.html">Personajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 fw-semibold" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-4 fw-semibold" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="movies">
+        <h2>Veamos los posters de las peliculas con sus descripciones:</h2>
+        <!-- <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-7 col-lg-5 col-xl-5">
+                    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="../assets/movie-banners/toy_story_1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="../assets/movie-banners/toy_story_2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="../assets/movie-banners/toy_story_3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="../assets/movie-banners/toy_story_4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="../assets/movie-banners/toy_story_5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="container my-1">
+            <div class="row justify-content-center">
+                <div class="col-10 col-md-12 col-lg-12 col-xl-12">
+                    <div id="carouselExample" class="carousel slide carousel-fade">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active d-flex flex-column flex-lg-row align-items-center gap-5" data-bs-interval="3000">
+                                <div class="col-xs-10 col-md-7 col-lg-7 p-0">
+                                    <img src="../assets/movie-banners/toy_story_1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-4 d-flex align-items-center justify-content-center">
+                                    <p class="fs-3">En el mundo secreto de la habitación de Andy, el liderazgo del vaquero Woody se tambalea con la llegada de Buzz Lightyear, un guardián espacial que ignora su naturaleza de juguete. Una crisis de celos termina con ambos perdidos en el peligroso mundo exterior, obligándolos a unir fuerzas para escapar del cruel vecino Sid. En esta odisea, Buzz acepta su realidad de plástico mientras Woody confronta su inseguridad, transformando su rivalidad en una lealtad inquebrantable. Tras una épica persecución, ambos regresan a casa no solo como compañeros, sino como mejores amigos, demostrando que el verdadero valor de un juguete reside en su capacidad de amar y ser leal.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item d-flex flex-column flex-lg-row align-items-center gap-5" data-bs-interval="3000">
+                                <div class="col-xs-10 col-md-7 col-lg-7 p-0">
+                                    <img src="../assets/movie-banners/toy_story_2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-4 d-flex align-items-center justify-content-center">
+                                    <p class="fs-3">La lealtad de Woody se pone a prueba cuando es secuestrado por un coleccionista que planea venderlo a un museo en Japón. Al descubrir que es una valiosa pieza de colección de un antiguo programa de televisión, Woody conoce a su nueva "familia": la vaquera Jessie, el fiel Tiro al Blanco y el Capataz. Mientras Buzz lidera una heroica misión de rescate, Woody debe elegir entre la inmortalidad perfecta de una vitrina o una vida finita pero llena de amor junto a Andy. Finalmente, el vaquero comprende que ser amado por un niño es la misión más noble de un juguete.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item d-flex flex-column flex-lg-row align-items-center gap-5" data-bs-interval="3000">
+                                <div class="col-xs-10 col-md-7 col-lg-7 p-0">
+                                    <img src="../assets/movie-banners/toy_story_3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-4 d-flex align-items-center justify-content-center">
+                                    <p class="fs-3">Con Andy a punto de partir a la universidad, sus juguetes terminan por error en la guardería Sunnyside, un lugar que parece un paraíso pero es una prisión gobernada por el oso Lotso. Woody, el único que logra escapar, debe regresar para rescatar a sus amigos de un destino cruel. Tras enfrentar sus miedos más profundos en un vertedero de basura, el grupo comprende que su ciclo con Andy ha terminado. En un final conmovedor, Andy entrega sus tesoros a la pequeña Bonnie, asegurando que el legado de juego y amistad continúe en nuevas manos.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item d-flex flex-column flex-lg-row align-items-center gap-5" data-bs-interval="3000">
+                                <div class="col-xs-10 col-md-7 col-lg-7 p-0">
+                                    <img src="../assets/movie-banners/toy_story_4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-4 d-flex align-items-center justify-content-center">
+                                    <p class="fs-3">Instalado en la habitación de Bonnie, Woody se esfuerza por proteger a Forky, un juguete creado con basura que sufre una crisis de identidad. Durante un viaje familiar, Woody se reencuentra con Bo Peep, quien vive como un "juguete perdido" y le muestra que existe un mundo vasto más allá de pertenecer a un solo niño. Al ayudar a la muñeca Gabby Gabby a encontrar su propósito, Woody entiende que su propia misión ha cambiado. En una despedida histórica, el vaquero decide quedarse con Bo para guiar a otros juguetes, eligiendo finalmente su propia libertad y destino.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item d-flex align-items-center gap-5 flex-column" data-bs-interval="3000">
+                                <div class="col-xs-10 col-md-7 col-lg-7 p-0">
+                                    <img src="../assets/movie-banners/toy_story_5.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="col-sm-10 col-md-10 col-lg-4 d-flex align-items-center justify-content-center">
+                                    <p class="fs-3">Proximamente...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toy Story (1995): El Despertar de la Amistad ----- TITULO
+        La historia comienza en el microcosmos de la habitación de Andy, donde los juguetes cobran vida cuando los humanos no miran. Woody, un vaquero de cuerda de los años 50, reina con seguridad como el juguete favorito y líder del grupo, manteniendo el orden y la calma. Sin embargo, el equilibrio se rompe durante la fiesta de cumpleaños de Andy con la llegada de Buzz Lightyear, una figura de acción espacial de última tecnología que no sabe que es un juguete. La trama se dispara cuando los celos de Woody por ser desplazado provocan un accidente que termina con ambos juguetes perdidos en el mundo exterior, lejos de la seguridad de su hogar.<br>Lo que sigue es una odisea de supervivencia y descubrimiento en la que Woody y Buzz deben aprender a confiar el uno en el otro mientras escapan de las garras de Sid, el vecino "torturador de juguetes". En este viaje, Buzz se enfrenta a la dolorosa realidad de su naturaleza plástica, mientras que Woody debe confrontar su propio egoísmo y sus inseguridades. La película deja de ser una simple competencia por el cariño de un niño para convertirse en una historia sobre la crisis de identidad y la importancia de la colaboración frente a la adversidad.<br>El clímax de la cinta es una de las persecuciones más icónicas del cine, donde los juguetes de la habitación de Andy se unen para rescatar a sus amigos. Al final, Woody y Buzz logran regresar a casa no solo como compañeros de cuarto, sino como mejores amigos. La película cierra con una poderosa lección: el valor de un juguete no reside en sus funciones o accesorios, sino en su capacidad de estar ahí para su dueño y para sus semejantes, estableciendo las bases de una hermandad que durará décadas.  -->
+        <br>
+        <!-- Toy Story 2 (1999): El Dilema de la Inmortalidad
+        La aventura comienza cuando Woody, en un intento heroico por rescatar a otro juguete en una venta de garaje, es secuestrado por Al McWhiggin, un coleccionista obsesivo que planea venderlo a un museo en Japón. En el departamento de Al, Woody descubre su verdadero origen: es una pieza de colección valiosísima de un antiguo programa de televisión llamado "El Rodeo de Woody". Allí conoce a su nueva "familia": la vaquera Jessie, el fiel caballo Tiro al Blanco y el Capataz, quienes han pasado años esperando a Woody para completar el set y ser preservados para siempre tras una vitrina de cristal.<br>Mientras tanto, Buzz Lightyear lidera una misión de rescate épica a través de la ciudad, demostrando cuánto ha crecido desde la primera película. Ahora es él quien debe recordarle a Woody su propósito, enfrentándose incluso a su propio "doble" en una juguetería y al mismísimo Emperador Zurg. La trama alcanza su punto emocional más alto cuando Jessie le revela a Woody su trágica historia de abandono, planteándole al vaquero un dilema existencial: ¿es mejor ser amado por un niño y arriesgarse a ser olvidado algún día, o ser adorado por extraños en un museo donde nunca envejecerá ni sufrirá daños?<br>El clímap de la película nos lleva a una emocionante persecución en el aeropuerto, donde Woody comprende que "la vida solo vale la pena si eres amado por un niño". Al rescatar a Jessie y Tiro al Blanco para llevarlos con él a la casa de Andy, Woody acepta su propia mortalidad como juguete. La película cierra con una nota agridulce pero valiente: aunque Andy crecerá algún día, Woody decide disfrutar de cada momento de juego mientras dure, priorizando los vínculos reales sobre la fría perfección de un museo. -->
+        <br>
+        <!-- Toy Story 3 (2010): El Ciclo de la Vida y el Desapego
+        La historia da un salto temporal de varios años: Andy ya tiene 17 años y se prepara para irse a la universidad. La habitación que antes era un mundo de aventuras ahora es un lugar silencioso, y los juguetes —reducidos a un pequeño grupo liderado por Woody y Buzz— viven con el temor de terminar en la basura o en el ático. Por una serie de malentendidos, el grupo termina siendo donado a la guardería Sunnyside, un lugar que al principio parece el paraíso de los juguetes (donde siempre habrá niños para jugar), pero que pronto se revela como una prisión gobernada con puño de hierro por el oso de peluche Lotso.<br>En esta entrega, la trama se convierte en una película de escape carcelario. Woody, quien inicialmente intenta regresar solo con Andy, debe volver para rescatar a sus amigos de una situación aterradora. El conflicto central es el enfrentamiento entre dos filosofías: la de Lotso, quien cree que todos los juguetes son basura desechable porque su dueña lo reemplazó, y la de Woody, quien mantiene la fe ciega en el amor de Andy. El clímax en el vertedero de basura es uno de los momentos más intensos de la saga, donde los juguetes, ante una muerte inminente, deciden enfrentar su destino tomados de las manos, demostrando que su unión es más fuerte que cualquier miedo.<br>El final de la película es un hito emocional en la historia del cine. Tras ser rescatados, Woody comprende que el mejor destino para sus amigos no es el encierro en un ático, sino seguir cumpliendo su propósito. En una escena desgarradora pero hermosa, Woody deja una nota para que Andy entregue sus juguetes a una niña llamada Bonnie. La imagen de Andy jugando por última vez con Woody y Buzz antes de arrancar su auto hacia la universidad simboliza el fin de la niñez y el comienzo de una nueva etapa, dejando claro que, aunque los dueños crezcan, el legado de amor de un juguete permanece. -->
+        <br>
+        <!-- Toy Story 4 (2019): El Propósito y la Libertad
+        La historia comienza con los juguetes adaptándose a su nueva vida en la habitación de Bonnie. Sin embargo, Woody se enfrenta a una realidad difícil: ya no es el juguete favorito ni el líder del grupo, pasando gran parte del tiempo en el armario. Todo cambia cuando Bonnie crea a Forky, un juguete hecho de basura (un tenedor-cuchara) que sufre una crisis de identidad, creyendo que su único destino es el basurero. Woody, en un acto de entrega total, se propone proteger a Forky a toda costa durante un viaje familiar por carretera, convencido de que mantener a Forky a salvo es la única forma de seguir siendo útil para su niña.<br>El giro principal ocurre cuando Woody se reencuentra con Bo Peep en una tienda de antigüedades. Bo, que ha pasado años como un "juguete perdido" en el mundo exterior, le muestra a Woody una perspectiva revolucionaria: un juguete no necesita tener un dueño para tener una vida plena. Mientras Woody intenta rescatar a Forky de la muñeca Gabby Gabby (quien solo busca una caja de voz para ser amada), empieza a cuestionar su propia existencia. La película se transforma en un viaje de autodescubrimiento donde el vaquero entiende que su ciclo de servicio a un niño ha terminado y que ahora tiene la oportunidad de elegir su propio destino.<br>El clímax emocional ocurre en una feria, donde Woody debe tomar la decisión más difícil de su vida. En una despedida que rompe el corazón pero llena de esperanza, Woody decide separarse de su familia de siempre y de su mejor amigo, Buzz Lightyear, para quedarse al lado de Bo Peep como un juguete libre. Al entregarle su placa de sheriff a Jessie, Woody deja de ser el guardián de una habitación para convertirse en un guía para otros juguetes perdidos. La película cierra con una frase icónica que ahora tiene un nuevo significado: Buzz mira a Woody alejarse y dice: <i>"Él no está perdido... al infinito y más allá"</i>. -->
+    </main>
+
+    <footer>
+        <h2>Derechos Reservados</h2>
+        <h2>Pagina creada por Lucho ❤️</h2>
+        <nav>
+            <ul class="rs">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../assets/logos/facebook.png" alt="Logo de Facebook" class="rrss">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/logos/instagram.png" alt="Logo de Instagram" class="rrss">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/" target="_blank">
+                        <img src="../assets/logos/x.png" alt="Logo de X(Twitter)" class="rrss">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/intl-es/album/47OFnLtLVi5WrPYNXAwFGh" target="_blank">
+                        <img src="../assets/logos/spotify.png" alt="Logo de Spotify" class="rrss">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../assets/logos/whatsapp.png" alt="Logo de Whatsapp" class="rrss wa">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
