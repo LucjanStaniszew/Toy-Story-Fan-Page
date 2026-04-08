@@ -1,0 +1,105 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.home{
+    padding: 0 50px;
+    @include m.flex(column, wrap, center, center, 0);
+    p{
+        width: 75vw;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .home-cont{
+        @include m.flex(row, nowrap, center, center, 100px);
+        .home-list{
+            width: 40vw;
+            font-weight: 600;
+            font-size: 1.3rem;
+            text-align: center;
+            ol{
+                li{
+                    margin: 20px 0;
+                } 
+            }
+        }
+        .home-sect{
+            width: 40vw;
+            @include m.flex(column, nowrap, center, center, 20px);
+            .home-nav{
+                text-align: center;
+                .home-link{
+                    font-size: 1.7rem;
+                }
+                a{
+                    .home-link-img{
+                        width: 20vw;
+                        height: auto;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+        .list-title{
+            font-size: 2rem;
+        }
+    }
+    @include m.note{
+        .home-cont{
+            flex-direction: column;
+            gap: 0;
+            .home-list, .home-sect{
+                width: 90vw;
+            }
+            .home-sect{
+                flex-flow: row wrap;
+                .home-link-img{
+                    width: 40vw;
+                }
+            }
+        }
+    }
+    @include m.tablet{
+        .home-cont{
+            flex-direction: column;
+            gap: 0;
+            .home-list, .home-sect{
+                width: 90vw;
+                .list-title{
+                    width: 90vw;
+                    text-align: center;
+                }
+            }
+            .home-sect{
+                flex-direction: row;
+                flex-wrap: wrap;
+                column-gap: 30px;
+                .home-nav{
+                    a{
+                        .home-link-img{
+                            width: 40vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include m.mobile{
+        .home-cont{
+            flex-direction: column;
+            gap: 0;
+            .home-list, .home-sect{
+                width: 80vw;
+            }
+            .home-sect{
+                .home-nav{
+                    a{
+                        .home-link-img{
+                            width: 80vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

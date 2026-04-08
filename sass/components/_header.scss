@@ -1,0 +1,57 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+header {
+    background-image: url(../assets/cloud-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    background-blend-mode: overlay;
+    .navbar {
+        .container-fluid {
+            .navbar-brand{
+                .logo{
+                    height: 8vh;
+                    width: auto;
+                }
+            }
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            transition: all 0.5s ease;
+                            border-radius: 10px;
+                            display: inline-block;
+                            padding: 6px 12px;
+                            &:hover{
+                                background-color: v.$color;
+                                color: blue;
+                                transform: scale(1.05);
+                            }
+                        }
+                        .nav-link.active{
+                            color: v.$color;
+                            &:hover{
+                                background-color: v.$color;
+                                color: blue;
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include m.tablet{
+        h1{
+            display: none;
+        }
+    }
+    @include m.mobile{
+        h1{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+// MIXIN de FLEX
+
+@mixin flex($dir, $wrap, $jc, $ai, $gap){
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+// MIXIN de NOTEBOOK
+
+@mixin note{
+    @media (min-width: 968px) and (max-width: 1439px){
+        @content;
+    }
+}
+
+// MIXIN de TABLET
+
+@mixin tablet{
+    @media (min-width: 480px) and (max-width: 967px){
+        @content;
+    }
+}
+
+// MIXIN de MOBILE
+
+@mixin mobile{
+    @media (min-width: 300px) and (max-width: 479px){
+        @content;
+    }
+}
+
+// EXTEND
+// El extend es un bloque de codigo estatico, o sea que ya tiene definido los valores, no como el mixin que es variable, pero que yo puedo llamar y modificar
+
+%exflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}

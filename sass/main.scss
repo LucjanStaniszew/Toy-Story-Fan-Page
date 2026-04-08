@@ -1,0 +1,13 @@
+// SCSS A partir de ahora SASS
+// sass --watch sass/main.scss styles/style.css
+
+@use "utilities/variables";
+
+@use "components/header";
+@use "components/footer";
+
+@use "partials/home";
+@use "partials/peliculas";
+@use "partials/personajes";
+@use "partials/galeria";
+@use "partials/contacto";

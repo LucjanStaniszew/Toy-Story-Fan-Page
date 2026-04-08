@@ -1,0 +1,82 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.cont{
+    padding: 0 50px;
+    @extend %exflex;
+    gap: 150px;
+    .form{
+        text-align: center;
+        width: 40vw;
+        @include m.flex(column, nowrap, center, center, 20px);
+        input{
+            width: 35vw;
+            text-align: center;
+        }
+        .btns{
+            width: 100%;
+            @extend %exflex;
+            justify-content: space-around;
+            .form-btn{
+                border-radius: 10px;
+                padding: 5px;
+                background-color: transparent;
+                font-weight: bolder;
+                width: auto;
+            }
+        }
+    }
+    iframe{
+        width: 25vw;
+        height: 70vh;
+    }
+    @include m.note{
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+        font-weight: bold;
+        gap: 100px;
+        .form{
+            width: 80vw;
+            order: 1;
+            input{
+                width: 75vw;
+            }
+        }
+        iframe{
+            width: 40vw;
+            order: 2;
+        }
+    }
+    @include m.tablet{
+        flex-wrap: wrap;
+        font-size: 1.3rem;
+        font-weight: bold;
+        gap: 50px;
+        .form{
+            width: 80vw;
+            order: 1;
+            input{
+                width: 75vw;
+            }
+        }
+        iframe{
+            width: 40vw;
+            order: 2;
+        }
+    }
+    @include m.mobile{
+        flex-direction: column;
+        gap: 20px;
+        .form{
+            width: 80vw;
+            order: 1;
+            input{
+                width: 75vw;
+            }
+        }
+        iframe{
+            width: 80vw;
+            order: 2;
+        }
+    }
+}
